@@ -1,7 +1,8 @@
-import signUpUser from "./4-user-promise";
-
-const userPromise = signUpUser("Bob", "Dylan");
-
-userPromise.then((user) => {
-  console.log(user);
-});
+export default function signUpUser(firstName, lastName) {
+  return Promise.resolve(
+    {
+      firstName,
+      lastName,
+    },
+  );
+}
