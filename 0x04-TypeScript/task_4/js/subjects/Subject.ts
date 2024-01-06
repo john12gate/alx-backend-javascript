@@ -1,9 +1,9 @@
 namespace Subjects {
-  export class Subject {
-    teacher: Subjects.Teacher;
+    export class Subject {
+      public teacher: Teacher;
 
-    set setTeacher(teacher: Subjects.Teacher) {
-      this.teacher = teacher;
+      setTeacher(value: Teacher) {
+        this.teacher = value;
+      }
     }
   }
-}
